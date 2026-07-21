@@ -33,7 +33,7 @@ CREATE TABLE Asset (
     Category           NVARCHAR(100),
     Asset_Status_ID    INT,
     Asset_Location_ID  INT,
-    PIC                NVARCHAR(100),   -- person in charge
+    PIC                NVARCHAR(100),   
     IsDelete           BIT DEFAULT 0,
     FOREIGN KEY (Asset_Status_ID)   REFERENCES Asset_Status(Asset_Status_ID),
     FOREIGN KEY (Asset_Location_ID) REFERENCES Asset_Location(Asset_Location_ID)
